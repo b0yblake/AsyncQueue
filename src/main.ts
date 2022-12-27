@@ -1,5 +1,11 @@
 import { IAsyncQueue, DeferredPromise, Callback } from './model';
 
+/**
+ * takes a single of promise. returns a promise for when asyncFunc are finished
+ * @param  {Promise} asyncFunc
+ * @return {Promise}  Promise to resolve when asyncFunc are finished
+ */
+
 export function createAsyncQueue<T = void>(opts = { parallelConcurrent: false }): IAsyncQueue<T> {
   const { parallelConcurrent } = opts
   let queue: Callback<T>[] = []
@@ -46,6 +52,17 @@ export function createAsyncQueue<T = void>(opts = { parallelConcurrent: false })
   }
 }
 
+/**
+ * takes a custom parallel async function of promises. returns a promise for when all func of parallel async are finished
+ * @param  {Array} asyncFuncArray
+ * @param  {number} should parallel async run at 1 time. Default 2 async function run at the time
+ * @return {Promise}  Promise to resolve when parallel async (number config) are finished
+ */
+export function createAsyncCombineQueue<T = void>(asyncFuncArray: T[] = [], parallelLimit: number = 2 ): any {
 
+  const push = (task: Callback<T>) => {}
 
+  const start = async () => {}
+  
+}
 

@@ -34,7 +34,7 @@ $ yarn
 ## Usage
 
 ```javascript
-import { createAsyncQueue } from "AsyncQueue";
+import { createAsyncQueue } from "asyncqueue-custom";
 const queueProcess = createAsyncQueue();
 
 // Some async function
