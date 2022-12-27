@@ -1,5 +1,5 @@
 > ℹ️
-Before submitting an issue to this repo - Ensure it's a **issue with the code in this repo**, you may meet some issue from `rollup` config - please take a look in this document [Rollup](https://rollupjs.org/guide/en/)
+Before submitting an issue to this repo - Ensure it's a **issue with the code in this repo**, you may meet some issue from `rollup` config - please take a look in this document [Rollup](https://rollupjs.org/guide/en/) and vite [Vite](https://vitejs.dev/guide/)
 
 ## Why
 Being a front-end engineer, especially deal with asynchronous coding, with some context special, queue loop stack in default browser not run like what you want.
@@ -9,6 +9,7 @@ So I write this lib for difference mode: `single` `parallel` `combine`
 <img src="https://i.ibb.co/nbQc6sk/Javascript-event-loop.png" alt="javascript event loop">
 
 - With `AsyncQueue` mode single
+
 
 - With `AsyncQueue` mode parallel
 
@@ -30,7 +31,7 @@ $ cd csslayout
 $ yarn
 ```
 
-## How is work
+## Usage
 
 ```javascript
 import { createAsyncQueue } from "AsyncQueue";

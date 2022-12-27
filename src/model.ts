@@ -1,5 +1,5 @@
 /**
- * type of the callback, except generic type on input and output
+ * type of the callback, except capture generic type on input and output
  */
 export type Callback<T> = () => Promise<T>;
 
