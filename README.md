@@ -37,8 +37,7 @@ $ git clone https://github.com/b0yblake/AsyncQueue
 -   Install:
 
 ```shell
-$ cd AsyncQueue
-$ yarn
+$ npm i asyncqueue-custom
 ```
 
 ## Usage
